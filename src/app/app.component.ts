@@ -1,10 +1,7 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'; //Component decorator
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-root', // Use to locate a custom html element and apply the component to (index.html)
+  template: '<h1>My App</h1>'
 })
-export class AppComponent {
-  title = 'angular-essential';
-}
+export class AppComponent { }
