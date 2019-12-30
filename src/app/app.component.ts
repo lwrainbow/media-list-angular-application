@@ -8,6 +8,7 @@ import { Component } from '@angular/core'; //Component decorator
   //   <p>Keeping track of the media I want to watch.</p>
   // `
 
-  templateUrl: './app.component.html'
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent { }
