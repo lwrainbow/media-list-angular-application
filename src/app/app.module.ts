@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core'; //NgModule decorator
 import { BrowserModule } from '@angular/platform-browser'; //Contains core directives, pipes, and more for working with the DOM
 
 import { AppComponent } from './app.component';
+import { MediaItemComponent } from './media-item.component';
 
 @NgModule({
   // Make components, directives, and pipes available to module that don't come from another module
   declarations: [
-    AppComponent
+    AppComponent, 
+    MediaItemComponent
   ], 
   // Bring in other Angular modules
   imports: [
