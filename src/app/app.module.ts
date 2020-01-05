@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser'; //Contains core direc
 
 import { AppComponent } from './app.component';
 import { MediaItemComponent } from './media-item.component';
+import { MediaItemListComponent } from './media-item-list.component';
 
 @NgModule({
   // Make components, directives, and pipes available to module that don't come from another module
   declarations: [
     AppComponent, 
-    MediaItemComponent
+    MediaItemComponent,
+    MediaItemListComponent
   ], 
   // Bring in other Angular modules
   imports: [
