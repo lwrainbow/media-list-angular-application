@@ -34,7 +34,11 @@ export class MediaItemFormComponent implements OnInit{
     if (year >= minYear && year <= maxYear)
       return null;
     else
-      return { year: true }
+      return { year: {
+        min: minYear,
+        max: maxYear
+      } 
+    }
   }
 
   onSubmit(mediaItem){
