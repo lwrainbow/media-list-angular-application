@@ -11,6 +11,8 @@ import { FavoriteDirective } from './favorite.directive';
 
 import { CategoryListPipe } from './category-list.pipe';
 
+import { lookupListToken, lookupLists } from './providers'
+
 @NgModule({
   // Make components, directives, and pipes available to module that don't come from another module
   declarations: [
@@ -27,6 +29,7 @@ import { CategoryListPipe } from './category-list.pipe';
     ReactiveFormsModule
   ], 
   providers: [
+    { provide: lookupListToken, useValue: lookupLists}
   ],
   //Forroot module + will let Angular know which components will be the starting point for the bootstrap process
   bootstrap: [
