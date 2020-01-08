@@ -26,7 +26,8 @@ import { CategoryListPipe } from './category-list.pipe';
     BrowserModule,
     ReactiveFormsModule
   ], 
-  providers: [],
+  providers: [
+  ],
   //Forroot module + will let Angular know which components will be the starting point for the bootstrap process
   bootstrap: [
     AppComponent
