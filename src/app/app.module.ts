@@ -2,19 +2,15 @@ import { NgModule } from '@angular/core'; //NgModule decorator
 import { BrowserModule } from '@angular/platform-browser'; //Contains core directives, pipes, and more for working with the DOM
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpXhrBackend } from '@angular/common/http';
-
 import { AppComponent } from './app.component';
 import { MediaItemComponent } from './media-item.component';
 import { MediaItemListComponent } from './media-item-list.component';
 import { MediaItemFormComponent } from './media-item-form.component';
-
 import { FavoriteDirective } from './favorite.directive';
-
 import { CategoryListPipe } from './category-list.pipe';
-
 import { lookupListToken, lookupLists } from './providers'
-
 import { MockXHRBackend } from './mock-xhr-backend';
+import { routing } from './app.routing';
 
 @NgModule({
   // Make components, directives, and pipes available to module that don't come from another module
@@ -30,7 +26,8 @@ import { MockXHRBackend } from './mock-xhr-backend';
   imports: [
     BrowserModule,
     ReactiveFormsModule, 
-    HttpClientModule
+    HttpClientModule,
+    routing
   ], 
   providers: [
     { provide: lookupListToken, useValue: lookupLists }, 
