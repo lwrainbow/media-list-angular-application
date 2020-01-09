@@ -1,15 +1,16 @@
 <nav>
-  <a>
+  <a (click)="getMediaItems('')">
     <img src="assets/all.png" class="icon" />
   </a>
-  <a>
+  <a (click)="getMediaItems('Movies')">
     <img src="assets/movie.png" class="icon" />
   </a>
-  <a>
+  <a (click)="getMediaItems('Series')">
     <img src="assets/serie.png" class="icon" />
   </a>
 </nav>
-<header>
+<header [ngClass]="{'medium-movies':medium === 'Movies', 'medium-series':medium === 'Series'}">
+  <h2>{{medium}}</h2>
   <div *ngIf="mediaItems">{{ mediaItems | categoryList }}</div>
 </header>
 <section>

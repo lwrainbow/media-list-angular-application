@@ -46,7 +46,6 @@ export class MockXHRBackend implements HttpBackend {
     }
   ];
 
-
   handle(request: HttpRequest<any>): Observable<HttpEvent<any>> {
     return new Observable((responseObserver: Observer<HttpResponse<any>>) => {
       let responseOptions;
