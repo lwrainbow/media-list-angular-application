@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core'; //NgModule decorator
 import { BrowserModule } from '@angular/platform-browser'; //Contains core directives, pipes, and more for working with the DOM
 import { HttpClientModule, HttpXhrBackend } from '@angular/common/http';
-import { NewItemModule } from './new-item/new-item.module';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { MediaItemComponent } from './media-item.component';
@@ -24,7 +23,6 @@ import { MockXHRBackend } from './mock-xhr-backend';
   imports: [
     BrowserModule,
     HttpClientModule,
-    NewItemModule,
     routing
   ], 
   providers: [
