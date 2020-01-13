@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-essential": {
+    "media-list-augular-application": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-essential",
+            "outputPath": "dist/media-list-augular-application",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-essential:build"
+            "browserTarget": "media-list-augular-application:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-essential:build:production"
+              "browserTarget": "media-list-augular-application:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-essential:build"
+            "browserTarget": "media-list-augular-application:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-essential:serve"
+            "devServerTarget": "media-list-augular-application:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-essential:serve:production"
+              "devServerTarget": "media-list-augular-application:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-essential"
+  "defaultProject": "media-list-augular-application"
 }
